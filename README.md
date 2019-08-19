@@ -1,1 +1,0 @@
-# lanan_data_calculate
