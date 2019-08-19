@@ -21,7 +21,6 @@ HOSTURL = 'https://v2ray.api.lanan.xyz/client/api.php'
 
 #登录POST请求
 AUTHURL = HOSTURL + '?s=user.auth'
-
 response = requests.post(url=AUTHURL, data=POSTDATA, headers=HEADER, timeout=10)
 CONTENT = eval(response.content.decode("utf-8"))
 TOKEN = CONTENT["data"]
